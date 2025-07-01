@@ -1,0 +1,76 @@
+#home {
+  display: flex;
+  min-height: calc(100vh - 130px -28px - 28px);
+  position: relative;
+}
+
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5%;
+}
+
+#cta .title {
+  font-size: 3rem;
+  color: #263238;
+}
+
+#cta .title span {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #eb0029;
+}
+
+#cta .description {
+  font-size: 0.8rem;
+  color: #263238;
+}
+
+#cta .description-info {
+  font-size: 1rem;
+  color: #263238;
+}
+
+#cta .description-info span {
+  font-weight: 700;
+  color: #eb0029;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: #263238;
+}
+
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+  z-index: 2;
+}
+
+#banner img {
+  height: 100%;
+  width: fit-content;
+  /* width: 500px;
+  height: 508px; */
+}
+
+.shape {
+  background-color: #f2c94c;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 40% 30% 0% 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
