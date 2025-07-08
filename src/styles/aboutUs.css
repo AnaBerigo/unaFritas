@@ -6,6 +6,15 @@
   min-height: calc(100vh - 130px -28px - 28px);
 }
 
+#aboutUs .nome-sessao {
+  text-align: center;
+}
+
+#aboutUs .titulo-sessao {
+  text-align: center;
+  padding: 0 8%;
+}
+
 #infos_aboutUs {
   width: 100%;
   display: flex;
@@ -44,12 +53,6 @@
     gap: 40px;
   }
 }
-
-/* @media screen and (max-width: 1000px) {
-  #infos_aboutUs {
-    flex-direction: column;
-  }
-} */
 
 @media screen and (max-width: 870px) {
   #infos_aboutUs {
