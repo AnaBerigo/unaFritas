@@ -1,0 +1,204 @@
+#content-menu {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#options button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #eb0029;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#options button i {
+  font-size: 20px;
+  color: #ffe893;
+}
+
+#batatas,
+#adicionais,
+#bebidas {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 360px;
+  border-radius: 38px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  object-fit: cover;
+}
+
+.card .textos {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  color: #fff;
+  margin: 0 16px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.card .textos h2 {
+  font-size: 2.12rem;
+  font-weight: medium;
+}
+
+.card .textos p {
+  font-size: 0.87rem;
+}
+
+.card .textos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .textos div span {
+  font-size: 1.25rem;
+  color: #f2c94c;
+  font-weight: bold;
+}
+
+.card .textos div p {
+  font-size: 1.87rem;
+  font-weight: bold;
+}
+
+.card .textos div a {
+  font-size: 0.87rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.carousel-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.carousel-options button {
+  background-color: #eb0029;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#options button.active {
+  background-color: #263238;
+  color: #fff;
+}
+
+/* CSS SCROLLBAR */
+/* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+#batatas,
+#adicionais,
+#bebidas {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #eb0029 transparent; /* Firefox */
+}
+
+/* WebKit (Chrome, Safari) */
+#batatas::-webkit-scrollbar,
+#adicionais::-webkit-scrollbar,
+#bebidas::-webkit-scrollbar {
+  height: 8px;
+}
+
+#batatas::-webkit-scrollbar-track,
+#adicionais::-webkit-scrollbar-track,
+#bebidas::-webkit-scrollbar-track {
+  background: #eb0029;
+  border-radius: 10px;
+}
+
+#batatas::-webkit-scrollbar-thumb,
+#adicionais::-webkit-scrollbar-thumb,
+#bebidas::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #eb0029;
+}
+
+/* Remove setas (em alguns navegadores antigos do Windows) */
+#batatas::-webkit-scrollbar-button,
+#adicionais::-webkit-scrollbar-button,
+#bebidas::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+@media (max-width: 768px) {
+  #content-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #options {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #options button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  #batatas,
+  #adicionais,
+  #bebidas {
+    width: 100%;
+    padding: 0 10px;
+    scroll-padding: 10px;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 300px;
+    margin: 15px auto;
+  }
+
+  .carousel-options {
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}

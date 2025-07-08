@@ -40,3 +40,45 @@ $(document).ready(function () {
     updateCarousel();
   });
 });
+
+$(document).ready(function () {
+  // Mostrar apenas batatas ao iniciar
+  $("#batatas").show();
+  $("#adicionais, #bebidas").hide();
+  $("#options button").removeClass("active");
+  $('#options button:contains("Batatas")').addClass("active");
+
+  // Alternar entre categorias
+  $("#options button").click(function () {
+    const categoria = $(this).text().trim().toLowerCase();
+
+    $("#batatas, #adicionais, #bebidas").hide();
+
+    if (categoria.includes("batatas")) {
+      $("#batatas").show();
+    } else if (categoria.includes("adicionais")) {
+      $("#adicionais").show();
+    } else if (categoria.includes("bebidas")) {
+      $("#bebidas").show();
+    }
+
+    // Resetar botão ativo
+    $("#options button").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  // Lógica do carrossel horizontal
+  $(".next-btn").click(function () {
+    const visible = $(
+      "#batatas:visible, #adicionais:visible, #bebidas:visible"
+    );
+    visible.animate({ scrollLeft: "+=300" }, 500);
+  });
+
+  $(".prev-btn").click(function () {
+    const visible = $(
+      "#batatas:visible, #adicionais:visible, #bebidas:visible"
+    );
+    visible.animate({ scrollLeft: "-=300" }, 500);
+  });
+});
