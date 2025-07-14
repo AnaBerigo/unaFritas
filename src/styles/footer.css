@@ -1,0 +1,138 @@
+#contato {
+  color: #263238;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 5%;
+  gap: 60px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.footer-info,
+.footer-dados {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  & p {
+    margin: 12px 0;
+  }
+}
+
+.footer-form {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & p {
+    text-align: center;
+    margin: 16px 0;
+    width: 50%;
+  }
+}
+
+.logo-footer {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-dados p,
+.footer-form p {
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+
+.footer-dados h3,
+.footer-form h3 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-form .double {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-form label {
+  font-size: 0.7rem;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b5b5b5;
+  color: #263238;
+}
+
+.footer-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.footer-form textarea:focus,
+.footer-form input:focus {
+  outline: none;
+  border-color: #263238;
+}
+
+.footer-form button {
+  align-self: flex-end;
+  background: none;
+  border: 1px solid #b5b5b5;
+  color: #263238;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 870px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-form .double {
+    flex-direction: column;
+  }
+
+  .footer-form button {
+    align-self: center;
+  }
+
+  .footer-form p {
+    width: 90%;
+  }
+}

@@ -6,6 +6,7 @@
 @import url("./menu.css");
 @import url("./event.css");
 @import url("./preSale.css");
+@import url("./footer.css");
 
 * {
   font-family: "Poppins", sans-serif;
