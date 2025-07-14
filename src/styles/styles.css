@@ -65,6 +65,7 @@ section {
   color: #eb0029;
   font-size: 1.12rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .titulo-sessao {
