@@ -4,18 +4,11 @@
   justify-content: center;
   margin: 0 5%;
   gap: 20px;
-}
 
-#event img {
-  width: 50%;
-}
-
-#event p {
-  margin-top: 35px;
-}
-
-#event p span {
-  color: #eb0029;
+  & p span {
+    font-size: 0.9rem;
+    color: #eb0029;
+  }
 }
 
 @media screen and (max-width: 870px) {

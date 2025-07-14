@@ -4,18 +4,15 @@
   justify-content: center;
   margin: 0 5%;
   gap: 20px;
+
+  & p span {
+    font-size: 0.9rem;
+    color: #eb0029;
+  }
 }
 
 #preSale img {
   width: 50%;
-}
-
-#preSale p {
-  margin-top: 35px;
-}
-
-#preSale p span {
-  color: #eb0029;
 }
 
 @media screen and (max-width: 870px) {

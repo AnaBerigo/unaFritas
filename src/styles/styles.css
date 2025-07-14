@@ -75,6 +75,18 @@ section {
   font-weight: 700;
 }
 
+.texto-info {
+  font-size: 0.9rem;
+  color: #263238;
+  margin-top: 25px;
+}
+
+#footnote {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #263238;
+}
+
 @media screen and (max-width: 420px) {
   .nome-sessao {
     font-size: 1rem;
@@ -82,5 +94,11 @@ section {
 
   .titulo-sessao {
     font-size: 1.5rem;
+  }
+
+  #footnote {
+    text-align: center;
+    font-size: 0.45rem;
+    color: #263238;
   }
 }
