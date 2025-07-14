@@ -361,25 +361,31 @@
             <div class="footer-form">
                 <h3>Quer entrar em contato com a UnaFritas?</h3>
                 <p>Preencha o formulário abaixo e aguarde o retorno do contato.</p>
-                <form>
+                <form id="meuFormulario">
                     <label for="nome">Nome Completo*</label>
-                    <input type="text" id="nome" required />
+                    <input type="text" id="nome" name="nome" required />
+
                     <div class="double">
                         <div>
                             <label for="email">E-mail*</label>
-                            <input type="email" id="email" required />
+                            <input type="email" id="email" name="email" required />
                         </div>
                         <div>
                             <label for="celular">Celular*</label>
-                            <input type="tel" id="celular" required />
+                            <input type="tel" id="celular" name="celular" required />
                         </div>
                     </div>
+
                     <label for="mensagem">Mensagem*</label>
-                    <textarea id="mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+
                     <button type="submit">
                         Enviar Email <i class="fa-light fa-paper-plane-top" style="color: #eb0029;"></i>
                     </button>
                 </form>
+
+                    <!-- Toast -->
+                    <div id="toast" class="toast hidden">Mensagem enviada com sucesso!</div>
             </div>
         </div>
 

@@ -82,3 +82,32 @@ $(document).ready(function () {
     visible.animate({ scrollLeft: "-=300" }, 500);
   });
 });
+
+$("#meuFormulario").on("submit", function (e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  var dados = $form.serialize();
+
+  $.ajax({
+    url: "https://formsubmit.co/22c4f7495f3f45bcef8326dea1f0c02c",
+    method: "POST",
+    data: dados,
+    success: function () {
+      $form[0].reset();
+      mostrarToast("Mensagem enviada com sucesso!");
+    },
+    error: function () {
+      mostrarToast("Erro ao enviar a mensagem.");
+    },
+  });
+});
+
+function mostrarToast(mensagem) {
+  var $toast = $("#toast");
+  $toast.text(mensagem).removeClass("hidden");
+
+  setTimeout(function () {
+    $toast.addClass("hidden");
+  }, 4000);
+}
