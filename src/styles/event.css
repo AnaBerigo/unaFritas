@@ -1,0 +1,30 @@
+#event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5%;
+  gap: 20px;
+}
+
+#event img {
+  width: 50%;
+}
+
+#event p {
+  margin-top: 35px;
+}
+
+#event p span {
+  color: #eb0029;
+}
+
+@media screen and (max-width: 870px) {
+  #event {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #event img {
+    width: 100%;
+  }
+}
