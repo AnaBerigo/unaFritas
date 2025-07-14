@@ -1,0 +1,30 @@
+#preSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5%;
+  gap: 20px;
+}
+
+#preSale img {
+  width: 50%;
+}
+
+#preSale p {
+  margin-top: 35px;
+}
+
+#preSale p span {
+  color: #eb0029;
+}
+
+@media screen and (max-width: 870px) {
+  #preSale {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #preSale img {
+    width: 100%;
+  }
+}

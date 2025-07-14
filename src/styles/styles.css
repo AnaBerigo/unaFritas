@@ -5,6 +5,7 @@
 @import url("./aboutUs.css");
 @import url("./menu.css");
 @import url("./event.css");
+@import url("./preSale.css");
 
 * {
   font-family: "Poppins", sans-serif;
