@@ -13,11 +13,10 @@ Promover a marca UnaFritas, apresentando o conceito, os produtos e a presença d
 ## 🔍 Funcionalidades
 
 - Apresentação da marca UnaFritas
-- Divulgação do cardápio (batatas no cone, molhos, bebidas)
+- Divulgação do cardápio (batatas no cone, adicionais, bebidas)
 - Destaque para o evento da Feira Gastronômica
-- Seção com depoimentos de clientes
 - Formulário de contato
-- Design responsivo (mobile-first)
+- Design responsivo
 
 ---
 
@@ -33,11 +32,10 @@ Promover a marca UnaFritas, apresentando o conceito, os produtos e a presença d
 ## 🧩 Estrutura da Página
 
 - **Seção Hero:** Chamada de impacto + imagem de destaque
-- **Sobre a Marca:** História da UnaFritas
-- **Nosso Menu:** Apresentação dos produtos
-- **Feira Gastronômica:** Informações sobre o evento
-- **Por que escolher a UnaFritas?**: Benefícios e diferenciais
-- **Depoimentos:** Feedbacks de clientes
+- **Sobre nós:** História da UnaFritas
+- **Cardápio:** Apresentação dos produtos
+- **Evento:** Informações sobre o a Feira Gastronômica
+- **Pré-venda:** Benefícios e diferenciais
 - **Contato:** Formulário para dúvidas ou mensagens
 
 ---
