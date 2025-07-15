@@ -26,13 +26,13 @@ header {
 
 .nav-item a {
   text-decoration: none;
-  color: #263238;
+  color: var(--cor-fonte);
   font-weight: 500;
 }
 
 .nav-item.active a {
   font-weight: 600;
-  border-bottom: 3px solid #f2c94c;
+  border-bottom: 3px solid var(--cor-primaria);
 }
 
 #mobile_btn {

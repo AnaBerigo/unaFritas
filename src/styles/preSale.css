@@ -7,7 +7,7 @@
 
   & p span {
     font-size: 0.9rem;
-    color: #eb0029;
+    color: var(--cor-secundaria);
   }
 }
 

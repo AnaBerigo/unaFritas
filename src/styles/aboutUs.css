@@ -36,11 +36,11 @@
   & h2 {
     font-weight: 700;
     font-size: 1.5rem;
-    color: #263238;
+    color: var(--cor-fonte);
   }
   & p {
     font-size: 0.9rem;
-    color: #263238;
+    color: var(--cor-fonte);
   }
 }
 
@@ -102,12 +102,12 @@
   .carousel-item h2 {
     font-weight: 700;
     font-size: 1.3rem;
-    color: #263238;
+    color: var(--cor-fonte);
   }
 
   .carousel-item p {
     font-size: 0.9rem;
-    color: #263238;
+    color: var(--cor-fonte);
   }
 
   .carousel-nav {
@@ -121,7 +121,7 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: #eb0029;
+    color: var(--cor-secundaria);
     cursor: pointer;
   }
 }

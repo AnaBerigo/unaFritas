@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #eb0029;
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--branco);
   border: none;
   border-radius: 40px;
   padding: 12px 24px;
@@ -26,7 +26,7 @@
 
 #options button i {
   font-size: 20px;
-  color: #ffe893;
+  color: var(--cor-amarelo-claro);
 }
 
 #batatas,
@@ -63,7 +63,7 @@
   position: absolute;
   bottom: 10px;
   z-index: 2;
-  color: #fff;
+  color: var(--branco);
   margin: 0 16px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
@@ -84,7 +84,7 @@
 
 .card .textos div span {
   font-size: 1.25rem;
-  color: #f2c94c;
+  color: var(--cor-primaria);
   font-weight: bold;
 }
 
@@ -95,7 +95,7 @@
 
 .card .textos div a {
   font-size: 0.87rem;
-  color: #fff;
+  color: var(--branco);
   font-weight: bold;
   text-decoration: none;
 }
@@ -108,8 +108,8 @@
 }
 
 .carousel-options button {
-  background-color: #eb0029;
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--branco);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -119,8 +119,8 @@
 }
 
 #options button.active {
-  background-color: #263238;
-  color: #fff;
+  background-color: var(--cor-fonte);
+  color: var(--branco);
 }
 
 /* CSS SCROLLBAR */
@@ -129,7 +129,7 @@
 #adicionais,
 #bebidas {
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #eb0029 transparent; /* Firefox */
+  scrollbar-color: var(--cor-secundaria) transparent; /* Firefox */
 }
 
 /* WebKit (Chrome, Safari) */
@@ -142,16 +142,16 @@
 #batatas::-webkit-scrollbar-track,
 #adicionais::-webkit-scrollbar-track,
 #bebidas::-webkit-scrollbar-track {
-  background: #eb0029;
+  background: var(--cor-secundaria);
   border-radius: 10px;
 }
 
 #batatas::-webkit-scrollbar-thumb,
 #adicionais::-webkit-scrollbar-thumb,
 #bebidas::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: var(--branco);
   border-radius: 10px;
-  border: 2px solid #eb0029;
+  border: 2px solid var(--cor-secundaria);
 }
 
 /* Remove setas (em alguns navegadores antigos do Windows) */

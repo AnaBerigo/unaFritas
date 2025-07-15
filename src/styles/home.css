@@ -14,29 +14,29 @@
 
 #cta .title {
   font-size: 3rem;
-  color: #263238;
+  color: var(--cor-fonte);
 }
 
 #cta .title span {
   font-family: "Lobster Two", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
-  color: #eb0029;
+  color: var(--cor-secundaria);
 }
 
 #cta .description {
   font-size: 0.8rem;
-  color: #263238;
+  color: var(--cor-fonte);
 }
 
 #cta .description-info {
   font-size: 1rem;
-  color: #263238;
+  color: var(--cor-fonte);
 }
 
 #cta .description-info span {
   font-weight: 700;
-  color: #eb0029;
+  color: var(--cor-secundaria);
 }
 
 #cta_buttons {
@@ -46,7 +46,7 @@
 
 #cta_buttons a {
   text-decoration: none;
-  color: #263238;
+  color: var(--cor-fonte);
 }
 
 #banner {
@@ -63,7 +63,7 @@
 }
 
 .shape {
-  background-color: #f2c94c;
+  background-color: var(--cor-primaria);
   width: 50%;
   height: 100%;
   position: absolute;

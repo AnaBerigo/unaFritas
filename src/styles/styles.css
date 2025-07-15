@@ -8,6 +8,16 @@
 @import url("./preSale.css");
 @import url("./footer.css");
 
+:root {
+  --cor-primaria: #f2c94c;
+  --branco: #ffffff;
+  --cor-secundaria: #eb0029;
+  --cor-fonte: #263238;
+  --cor-sucesso: #28a745;
+  --cor-cinza: #b5b5b5;
+  --cor-amarelo-claro: #ffe893;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -17,7 +27,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--branco);
 }
 
 section {
@@ -25,8 +35,8 @@ section {
 }
 
 .btn-default {
-  background-color: #f2c94c;
-  color: #263238;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte);
   border: none;
   box-shadow: 0px 0px 20.7px 7px rgba(0, 0, 0, 0.1);
   padding: 14px 9px;
@@ -50,11 +60,11 @@ section {
   justify-content: center;
   width: 45px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: var(--branco);
   font-size: 1.25rem;
   border-radius: 10px;
   text-decoration: none;
-  color: #263238;
+  color: var(--cor-fonte);
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-out;
 }
@@ -64,36 +74,36 @@ section {
 }
 
 .nome-sessao {
-  color: #eb0029;
+  color: var(--cor-secundaria);
   font-size: 1.12rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .titulo-sessao {
-  color: #263238;
+  color: var(--cor-fonte);
   font-size: 2rem;
   font-weight: 700;
 }
 
 .texto-info {
   font-size: 0.9rem;
-  color: #263238;
+  color: var(--cor-fonte);
   margin-top: 25px;
 }
 
 #footnote {
   text-align: center;
   font-size: 0.6rem;
-  color: #263238;
+  color: var(--cor-fonte);
 }
 
 .toast {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #28a745;
-  color: white;
+  background-color: var(--cor-sucesso);
+  color: var(--branco);
   padding: 12px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -120,6 +130,6 @@ section {
   #footnote {
     text-align: center;
     font-size: 0.45rem;
-    color: #263238;
+    color: var(--cor-fonte);
   }
 }
