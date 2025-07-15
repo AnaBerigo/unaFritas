@@ -163,3 +163,65 @@ function mostrarToast(mensagem) {
     $toast.addClass("hidden");
   }, 4000);
 }
+
+ScrollReveal().reveal("#cta", {
+  delay: 200,
+  duration: 2000,
+  distance: "20%",
+  origin: "left",
+});
+
+ScrollReveal().reveal("#banner", {
+  delay: 200,
+  duration: 2000,
+  distance: "14%",
+  origin: "right",
+});
+
+ScrollReveal().reveal(".titulo-sessao", {
+  delay: 200,
+  duration: 1000,
+  distance: "50px",
+  origin: "bottom",
+  easing: "ease-in-out",
+  reset: false,
+});
+
+ScrollReveal().reveal(".nome-sessao", {
+  delay: 100,
+  duration: 800,
+  distance: "20px",
+  origin: "left",
+  reset: false,
+});
+
+ScrollReveal().reveal("#infos_aboutUs > div", {
+  interval: 200,
+  duration: 1000,
+  distance: "60px",
+  origin: "bottom",
+  reset: false,
+});
+
+ScrollReveal().reveal("#batatas > .card", {
+  interval: 100,
+  duration: 1000,
+  distance: "10%",
+  origin: "bottom",
+  reset: false,
+});
+
+ScrollReveal().reveal(".content", {
+  duration: 800,
+  distance: "50px",
+  origin: "right",
+  reset: false,
+});
+
+ScrollReveal().reveal(".footer-form, .footer-dados, .footer-info", {
+  duration: 1000,
+  distance: "50px",
+  origin: "bottom",
+  interval: 150,
+  reset: false,
+});

@@ -121,6 +121,8 @@
 #options button.active {
   background-color: var(--cor-fonte);
   color: var(--branco);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 /* CSS SCROLLBAR */
