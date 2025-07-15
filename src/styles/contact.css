@@ -4,7 +4,7 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  margin: 2% 5%;
+  margin: 2% 4%;
   gap: 60px;
 }
 
@@ -18,7 +18,7 @@
 .footer-info,
 .footer-dados {
   flex: 1;
-  min-width: 280px;
+  min-width: 290px;
 }
 
 .footer-dados {
