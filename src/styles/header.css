@@ -73,4 +73,8 @@ header {
     list-style: none;
     text-align: center;
   }
+
+  header {
+    background-color: var(--branco);
+  }
 }

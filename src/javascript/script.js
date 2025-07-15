@@ -43,15 +43,19 @@ $(document).ready(function () {
 
     const alvo = $($(this).attr("href"));
     if (alvo.length) {
+      const headerHeight = $("header").outerHeight(); // pega na hora (para mobile também)
+      const offset =
+        $(window).width() <= 870 ? headerHeight + 10 : headerHeight - 1;
+
       $("html, body").animate(
         {
-          scrollTop: alvo.offset().top - headerHeight + 1,
+          scrollTop: alvo.offset().top - offset,
         },
         600
       );
     }
 
-    // Fecha o menu mobile, se aberto
+    // Fecha o menu mobile
     $("#mobile_menu").removeClass("active");
     $("#mobile_btn").find("i").removeClass("fa-x");
   });
@@ -164,64 +168,78 @@ function mostrarToast(mensagem) {
   }, 4000);
 }
 
-ScrollReveal().reveal("#cta", {
-  delay: 200,
-  duration: 2000,
-  distance: "20%",
-  origin: "left",
-});
+if ($(window).width() > 870) {
+  ScrollReveal().reveal("#cta", {
+    delay: 200,
+    duration: 2000,
+    distance: "20%",
+    origin: "left",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal("#banner", {
-  delay: 200,
-  duration: 2000,
-  distance: "14%",
-  origin: "right",
-});
+  ScrollReveal().reveal("#banner", {
+    delay: 200,
+    duration: 2000,
+    distance: "14%",
+    origin: "right",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal(".titulo-sessao", {
-  delay: 200,
-  duration: 1000,
-  distance: "50px",
-  origin: "bottom",
-  easing: "ease-in-out",
-  reset: false,
-});
+  ScrollReveal().reveal(".titulo-sessao", {
+    delay: 200,
+    duration: 1000,
+    distance: "50px",
+    origin: "bottom",
+    easing: "ease-in-out",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal(".nome-sessao", {
-  delay: 100,
-  duration: 800,
-  distance: "20px",
-  origin: "left",
-  reset: false,
-});
+  ScrollReveal().reveal(".nome-sessao", {
+    delay: 100,
+    duration: 800,
+    distance: "20px",
+    origin: "left",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal("#infos_aboutUs > div", {
-  interval: 200,
-  duration: 1000,
-  distance: "60px",
-  origin: "bottom",
-  reset: false,
-});
+  ScrollReveal().reveal("#infos_aboutUs > div", {
+    interval: 200,
+    duration: 1000,
+    distance: "60px",
+    origin: "bottom",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal("#batatas > .card", {
-  interval: 100,
-  duration: 1000,
-  distance: "10%",
-  origin: "bottom",
-  reset: false,
-});
+  ScrollReveal().reveal("#batatas > .card", {
+    interval: 100,
+    duration: 1000,
+    distance: "10%",
+    origin: "bottom",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal(".content", {
-  duration: 800,
-  distance: "50px",
-  origin: "right",
-  reset: false,
-});
+  ScrollReveal().reveal(".content", {
+    duration: 800,
+    distance: "50px",
+    origin: "right",
+    reset: false,
+    mobile: true,
+  });
 
-ScrollReveal().reveal(".footer-form, .footer-dados, .footer-info", {
-  duration: 1000,
-  distance: "50px",
-  origin: "bottom",
-  interval: 150,
-  reset: false,
-});
+  ScrollReveal().reveal(".footer-form, .footer-dados, .footer-info", {
+    duration: 1000,
+    distance: "50px",
+    origin: "bottom",
+    interval: 150,
+    reset: false,
+    mobile: true,
+  });
+} else {
+  $("#batatas .card").css("opacity", 1);
+}
