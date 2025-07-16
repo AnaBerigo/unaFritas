@@ -101,7 +101,6 @@
 
 .footer-form textarea:focus,
 .footer-form input:focus {
-  outline: none;
   border-color: var(--cor-fonte);
 }
 
